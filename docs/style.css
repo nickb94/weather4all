@@ -43,6 +43,12 @@ body{
 }
 
 
+#toggle:focus {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
 .currently{
 
     width: 100%;
@@ -92,10 +98,9 @@ body{
 
 .text_area{
 
-   
+    padding: 11px;
     width: 100%;
     text-align: center;
-    height: 50px;
     font-size: 30px;
     word-break: break-all;
 
@@ -158,7 +163,7 @@ to{
     animation: fadeIn 2s;
     width: 100%;
     text-align: center;
-    height: 50px;
+    padding: 11px;
     font-size: 40px;
     font-weight: 900;
     word-break: break-all;
@@ -275,5 +280,27 @@ span.fade{
     }
     .metric_area{
         text-align: center;
+    }
+
+    .temp_area{
+
+        width: 100%;
+        text-align: center;
+        font-size: 70px;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .place_area {
+        animation: fadeIn 2s;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+        word-break: break-all;
+        display: flex;
+        justify-content: center;
     }
 }
