@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> 
+    <!-- <script src="app.js"></script> -->
+</head>
+<body class="body">
+
+    <div class="container">
+        <!-- <div id="toggle" onclick="mode()">Mode</div> -->
+        <button id="toggle" onclick="tog()" type="submit">Night</button>
+        <div class="currently">
+            Currently,   
+        </div>
+        <div class="wrapper">
+
+            <div class="left">
+
+            </div>
+            <div class="right">
+                <div class="text_area"></div>
+                
+                <div class="place_area">
+                    <div class="area"></div>
+                    <div class="country"></div>
+                </div>
+
+                <div class="temp_area">
+                    <div class="tempclass" id="temp"></div>
+                    <div id="metric"></div>
+                </div>
+
+                <div class="metric_area">
+                    <div id="btn">metric</div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

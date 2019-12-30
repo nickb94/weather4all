@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+
+    font-family: 'Roboto', sans-serif;
+    max-width: 1111px;
+    width: 100%;
+    margin: 0 auto;
+    transition: all 1000ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+
+}
+
+
+
+#toggle{
+
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 2.5;
+    position: fixed;
+    right: 43px;
+    top: 50px;
+    border-radius: 30px;
+    padding: 8px;
+    font-size: 10px;
+    font-weight: 900;
+    animation: fadeUp 3s;
+}
+
+
+.currently{
+
+    width: 100%;
+    line-height: 7;
+    text-align: center;
+    font-size: 30px;
+    transition: all 1000ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+}
+
+.currently_night{
+
+    color: white;
+}
+
+.wrapper{
+
+    display: flex;
+    padding: 50px;
+    
+}
+
+.left{
+
+    width: 50%;
+    text-align: center;
+    
+}
+
+
+.iconImg{
+
+    overflow: hidden;
+    animation: fadeDown 1s; 
+    border-radius: 110px;
+    width: 100%;
+}
+
+
+.right{
+
+    width: 50%;
+    height: 100%;
+
+    word-break: break-all;
+}
+
+
+.text_area{
+
+   
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    font-size: 30px;
+    word-break: break-all;
+
+
+
+}
+
+.text_area_night{
+    color: white;   
+
+}
+
+
+@keyframes fadeIn{
+from{
+    opacity: 0;
+    transition: all 1s ease;
+    transform: translateX(-50px);
+}
+to{
+    opacity:1;
+    transform: translateX(0px);
+
+}
+
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transition: all 1s ease;
+        transform: translateZ(-50px);
+    }
+    to{
+        opacity:1;
+        transform: translateZ(0px);
+    
+    }
+    
+    }
+
+@keyframes fadeDown{
+    from{
+        opacity: 0;
+        transition: all 1s ease;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0px);
+    
+    }
+    
+    }
+    
+
+
+.place_area{
+   
+    animation: fadeIn 2s;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    font-size: 40px;
+    font-weight: 900;
+    word-break: break-all;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.place_area_night{
+    color: white; 
+}
+
+
+
+.temp_area{
+
+    
+   
+    width: 100%;
+    text-align: center;
+    font-size: 120px;
+    font-weight: 900;
+    height: 150px;
+    word-break: break-all;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.temp_area_night{
+
+    color: white; 
+}
+
+
+
+.metric_area{
+
+    animation: fadeDown 1s;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    word-break: break-all;
+    
+
+}
+    .metric_area_night{
+
+        color: white; 
+    }
+
+
+#btn{
+
+    cursor: pointer;
+    display: inline;
+    
+
+
+}
+
+#btn_night{
+    color: white;
+}
+
+span{
+
+    opacity: 0;
+    transition: all 1s ease;
+    transform: translateX(-50px);
+    display: inline-block;
+
+}
+
+span.fade{
+
+    opacity:1;
+    transform: translateX(0px);
+
+}
+
+@media (max-width: 1100px){
+
+
+    body{
+
+        font-family: 'Roboto', sans-serif;
+        transition: all 1000ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+    }
+    .currently{
+
+        line-height: 5;
+    }
+    .wrapper{
+
+        flex-direction: column;
+    }
+    .left{
+        order: 2;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .iconImg{
+        width: inherit;
+        
+    }
+
+    .right{
+        order: 1;
+        width: 100%;
+    }
+    .metric_area{
+        text-align: center;
+    }
+}
