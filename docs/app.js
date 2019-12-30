@@ -95,7 +95,7 @@ async function getData(){
 
         //Changing weather description
         const w = document.getElementsByClassName("text_area")[0];
-        w.textContent =`feels like ` + data.weather[0].main + ` in`;
+        w.textContent = data.weather[0].main + ` in`;
         
 
         //Changing state,country
