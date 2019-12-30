@@ -98,11 +98,11 @@ body{
 
 .text_area{
 
-    padding: 11px;
+   
     width: 100%;
     text-align: center;
     font-size: 30px;
-    word-break: break-all;
+    word-break: break-word;
 
 
 
@@ -299,8 +299,18 @@ span.fade{
         text-align: center;
         font-size: 30px;
         font-weight: 900;
-        word-break: break-all;
+        word-break: break-word;
         display: flex;
         justify-content: center;
     }
+}
+
+@media (max-width: 480px){
+
+    .place_area{
+
+        display: block;
+    }
+
+
 }

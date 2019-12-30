@@ -8,13 +8,13 @@
 function tog(){
     console.log(document.getElementById("toggle").textContent);
 
-    if((document.getElementById("toggle").textContent)==="Night"){
-        document.getElementById("toggle").textContent ="Day";
+    if((document.getElementById("toggle").textContent)==="Dark"){
+        document.getElementById("toggle").textContent ="Light";
         night();
 
 
-    }else if((document.getElementById("toggle").textContent)==="Day"){
-        document.getElementById("toggle").textContent ="Night";
+    }else if((document.getElementById("toggle").textContent)==="Light"){
+        document.getElementById("toggle").textContent ="Dark";
 
             day();
     }
@@ -100,10 +100,10 @@ async function getData(){
 
         //Changing state,country
         const s = document.getElementsByClassName("area")[0];
-        s.textContent = data.name;
+        s.textContent = data.name + `,`;
 
         const c = document.getElementsByClassName("country")[0];
-        c.textContent =`, `+ data.sys.country;
+        c.textContent = data.sys.country;
        
         //Changing Icon
 
