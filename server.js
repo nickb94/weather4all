@@ -4,9 +4,10 @@ const app = express();
 app.use(express.static("docs"));
 app.use(express.json());
 
-app.get("/getdata", (res,req,err)=>{
+app.get("/getdata", (req,res,err)=>{
 
     res.send("Thanks tou");
+    console.log("success");
 
 })
 
