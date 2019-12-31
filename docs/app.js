@@ -1,7 +1,4 @@
-//Clicking button for data
-// var btn = document.getElementById('button');
 
-// btn.addEventListener("click", getData);
 
 
 //Night Mode Toggle
@@ -33,7 +30,9 @@ function tog(){
      document.getElementsByClassName("place_area")[0].classList.add('place_area_night');
      document.getElementsByClassName("temp_area")[0].classList.add('temp_area_night');
      document.getElementsByClassName("metric_area")[0].classList.add('metric_area_night');
- }
+     document.getElementsByClassName("footer")[0].classList.add('footer_night');
+
+    }
 
  function day(){
  
@@ -46,6 +45,8 @@ function tog(){
     document.getElementsByClassName("place_area")[0].classList.remove('place_area_night');
     document.getElementsByClassName("temp_area")[0].classList.remove('temp_area_night');
     document.getElementsByClassName("metric_area")[0].classList.remove('metric_area_night');
+    document.getElementsByClassName("footer")[0].classList.remove('footer_night');
+
 }
 
 
@@ -123,28 +124,28 @@ async function getData(){
         }else if(data.weather[0].main === "Rain"){
 
             img.setAttribute('src', 'https://media.giphy.com/media/xUPGcILSlV4VjCZ9PG/giphy.gif');
-            }else if(data.weather[0].main === "Thunderstorm"){
+        }else if(data.weather[0].main === "Thunderstorm"){
 
                 img.setAttribute('src', 'https://media.giphy.com/media/rsdDNSViCq8OQ/giphy.gif');
-                }else if(data.weather[0].main === "Clear"){
+         }else if(data.weather[0].main === "Clear"){
 
-                    img.setAttribute('src', 'https://media.giphy.com/media/ivcVZnZAEqhs4/giphy.gif');
-                    }else if(data.weather[0].main === "Snow"){
+        img.setAttribute('src', 'https://media.giphy.com/media/ivcVZnZAEqhs4/giphy.gif');
+        }else if(data.weather[0].main === "Snow"){
 
-                        img.setAttribute('src', 'https://media.giphy.com/media/YxA2PPkXbwRTa/giphy.gif');
-                        }else if(data.weather[0].main === "Drizzle"){
+        img.setAttribute('src', 'https://media.giphy.com/media/YxA2PPkXbwRTa/giphy.gif');
+        }else if(data.weather[0].main === "Drizzle"){
 
-                            img.setAttribute('src', 'https://media.giphy.com/media/TQOPlno21tSnK/giphy.gif');
-                            }else if(data.weather[0].main === "Mist"){
+        img.setAttribute('src', 'https://media.giphy.com/media/TQOPlno21tSnK/giphy.gif');
+        }else if(data.weather[0].main === "Mist"){
 
-                                img.setAttribute('src', 'https://media.giphy.com/media/IJfCy4fgb8gDu/giphy.gif');
-                                }else if(data.weather[0].main === "Smoke"){
+        img.setAttribute('src', 'https://media.giphy.com/media/IJfCy4fgb8gDu/giphy.gif');
+        }else if(data.weather[0].main === "Smoke"){
 
-                                    img.setAttribute('src', 'https://media.giphy.com/media/2seaKlqqoGglLcPH2Q/giphy.gif');
-                                    }else if(data.weather[0].main === "Haze"){
+        img.setAttribute('src', 'https://media.giphy.com/media/2seaKlqqoGglLcPH2Q/giphy.gif');
+        }else if(data.weather[0].main === "Haze"){
 
-                                        img.setAttribute('src', 'https://media.giphy.com/media/53JgjWEDQPIDm/giphy.gif');
-                                        }
+        img.setAttribute('src', 'https://media.giphy.com/media/53JgjWEDQPIDm/giphy.gif');
+        }
 
 
 
@@ -169,7 +170,7 @@ async function getData(){
         }
 
         let char = 0;
-        let timer =setInterval(onTick, 50);
+        let timer =setInterval(onTick, 300);
         //to apply class for all characters(spans)
         function onTick(){
 
@@ -218,8 +219,6 @@ async function getData(){
 
 
 //Changing metrics
-
-
 
     const s = document.getElementById('btn');
   
