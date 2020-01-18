@@ -6,5 +6,5 @@ A basic Webapp using OpenWeatherAPI facility for showing approximate temperature
 ### Technologies Used
 - HTML5
 - CSS3
--Javascript
+- Javascript
 
