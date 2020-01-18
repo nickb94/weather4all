@@ -1,5 +1,10 @@
-#weather4all
+## Weather4all
 
-Welcome,
+### About
+A basic Webapp using OpenWeatherAPI facility for showing approximate temperature of the currrent location. Location is fetched after permitted.
 
-Thanks for your interest.# weather4all
+### Technologies Used
+- HTML5
+- CSS3
+-Javascript
+
