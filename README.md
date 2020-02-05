@@ -8,3 +8,4 @@ A basic Webapp using OpenWeatherAPI facility for showing approximate temperature
 - CSS3
 - Javascript
 
+[demo](https://nickb94.github.io/weather4all/)
